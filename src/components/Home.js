@@ -43,7 +43,7 @@ const Home = () => {
               <p>Let's go places!</p>
                   <form>
                         <input type='radio'></input>
-                        <label htmlFor=''> tatti One Way</label>
+                        <label htmlFor=''>  One Way</label>
 
                         <input type='radio'></input>
                         <label htmlFor=''>Round Trip</label>
