@@ -1,0 +1,14 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build']
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']
+
+options:
+  machineType: 'N1_HIGHCPU_8'
+  substitutions:
+    _YOUR_PROJECT_ID: 'ninth-rhino-415421'
